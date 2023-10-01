@@ -1,0 +1,63 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.form-tab-link {
+    color: black;
+    text-decoration: none;
+}
+
+.button-show-form {
+    cursor: pointer;
+    border: 2px solid #548eaa;
+    background: #548eaa;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+    font-size: clamp(12px, 3vw, 16px);
+
+    @media (min-width: 2100px) {
+        font-size: 24px;
+    }
+    padding: 5px 10px;
+
+    &:focus, &:hover {
+        outline: none;
+        background: #4f5152; 
+        border-color: #4f5152;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+
+        &:hover {
+            background: #548eaa;
+        }
+    }
+}
+
+ul {
+    padding-left: 10px;
+}
+
+body {
+    background-image: linear-gradient(rgb(255, 123, 69, 0.7), rgb(132, 193, 255, 0.8));
+    padding: 30px 0;
+}
+
+html {
+    font-size: clamp(12px, 3vw, 16px);
+
+    @media (min-width: 2100px) {
+        font-size: 24px;
+    }
+}
